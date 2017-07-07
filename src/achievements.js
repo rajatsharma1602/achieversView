@@ -1,14 +1,14 @@
 import React from 'react';
+import 'bootstrap';
+
+import Footer from './footer/footer.js';
 
 class Achievements extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
 // following segment will be rendered on page
   render() {
     return (
       // this is the segment to be loaded
+      <div>
         <div className="container">
           <div className="row">
             <div className="col-md-3 col-xs-12">
@@ -20,6 +20,8 @@ class Achievements extends React.Component {
           </div>
           <div className="well well-sm">...</div>
         </div>
+        <Footer />
+      </div>
     );
   }
 }
