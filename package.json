@@ -17,7 +17,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
-  "homepage" : "https://rajatsharma1602.github.io/achieversView/docs",
+  "homepage" : "/docs",
   "devDependencies": {
     "react-scripts": "^1.0.10"
   }
