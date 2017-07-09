@@ -57,6 +57,9 @@
   font-size: 21px;
 }
 
+.footer-credit {
+  margin-top: 12px;
+}
 
 /*media queries*/
 @media only screen and (max-width: 767px) {
