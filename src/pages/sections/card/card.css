@@ -1,0 +1,22 @@
+.col-md-12.bdr {
+  margin: .8em;
+  padding: .5em;
+  border:1px solid #202020;
+  border-radius: 20px;
+  box-shadow: 3px 4px 4px #202020;
+	background: #fff;
+}
+.achievement-item:after {
+  position: absolute;
+  content: '';
+  border-left: 1px solid #404040;
+  left: 80%;
+}
+.achievement-item p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.img-circle.img-responsive {
+  width: 100px;
+  height:100px;
+}

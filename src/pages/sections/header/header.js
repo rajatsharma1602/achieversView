@@ -5,11 +5,9 @@ import './header.css';
 export default class Header extends React.Component {
   render() {
     return(
-      <div>
-        <header>
-          <img className="img-responsive" src="./media/achvrs.jpg" width="1366" height="500" />
-        </header>
-      </div>
+      <header>
+        <img className="img-responsive" src="./media/achvrs.jpg" width="100%" height="500" />
+      </header>
     );
   }
 }

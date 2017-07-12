@@ -1,58 +1,23 @@
-.timeline-item {
-	padding: 1em 2em 2em;
-	position: relative;
-	color: #000;
-	border-left: 2px solid #404040;
+.achievements-container {
+	background-image: url(./bg1.jpg);
+	background-repeat: repeat;
 }
-.timeline-item	p {
-	font-size: 1rem;
+.leaders {
+margin-bottom: 20px;
+
 }
 
-.timeline-item:after {
-	width: 20px;
-	height: 20px;
-	display: block;
-	top: 1em;
-	position: absolute;
-	left: -11px;
-	border-radius: 10px;
-	content: '';
-	border: 2px solid #404040;
-	background: white;
+.leaders h2, .achievements h2 {
+	background: #fff;
+	border: 1px solid #909090;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 5px;
+	text-align: center;
 }
 
-.timeline-item:last-child {
-	border-image: linear-gradient(
-		to bottom,
-		rgba(black, .3) 60%,
-		rgba(black, .3, 0)) 1 100%;
+@media only screen and (min-width: 768px) {
+.achievements h2 {
+	display: none;
 }
-
-.date_time {
-  font-size: 30px;
-  font-weight: 600;
-  color: #707070;
-  line-height: 19px;
-}
-
-.col-md-12.bdr {
-  margin: .8em;
-  padding: .5em;
-  border:1px solid #202020;
-  border-radius: 20px;
-  box-shadow: 3px 4px 4px #202020;
-}
-.achievement-item:after {
-  position: absolute;
-  content: '';
-  border-left: 1px solid #404040;
-  left: 80%;
-}
-.achievement-item p {
-  font-size: 14px;
-  margin-top: 8px;
-}
-.img-circle.img-responsive {
-  width: 100px;
-  height:100px;
 }

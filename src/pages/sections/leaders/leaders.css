@@ -1,0 +1,15 @@
+.ldrs {
+  background: #fff;
+	border: 1px solid #909090;
+	border-radius: 5px;
+}
+.ldr{
+  text-align: center;
+}
+.ldr img{
+  align-items: center;
+  margin: 5px auto;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  padding: 5px;
+}
