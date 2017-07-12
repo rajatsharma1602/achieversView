@@ -1,7 +1,7 @@
 import React from 'react';
 import './achievements.css'
-import Header from './header/header.js'
-import Footer from './footer/footer.js'
+import Header from './../../sections/header/header.js'
+import Footer from './../../sections/footer/footer.js'
 
 
 class Achievements extends React.Component {

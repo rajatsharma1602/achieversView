@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import  CLASSNAME from FILENAME.JS
-import Achievements from './achievements.js';
+import Achievements from './pages/achievements/achievements.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
