@@ -1,18 +1,17 @@
 import React from 'react';
 import './achievements.css'
+import Header from './header/header.js'
 import Footer from './footer/footer.js'
 
 
 class Achievements extends React.Component {
-  constructor(props) {
-    super(props);
 
-  }
 // following segment will be rendered on page
   render() {
     return (
       // this is the segment to be loaded
       <div>
+        <Header />
         <div className="container">
           <div className="timeline-item col-md-11 col-md-offset-1" >
             <span className="date_time">20-07-1990</span>
