@@ -8,7 +8,7 @@ export default class Card extends React.Component {
         <div className="col-md-12 bdr">
           <div className="col-md-12">
             <div className="col-md-4 center-block">
-              <img className="img-responsive img-circle" src="./media/1.jpg" alt="sample pic" />
+              <img className="img-responsive img-circle card-img" src="./media/1.jpg" alt="sample pic" />
             </div>
             <div className="col-md-8">
               <p><label>{this.props.achiever}</label></p>
