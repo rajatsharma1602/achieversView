@@ -1,10 +1,15 @@
 .col-md-12.bdr {
   margin: .8em;
-  padding: .5em;
-  border:1px solid #202020;
-  border-radius: 20px;
-  box-shadow: 3px 4px 4px #202020;
-	background: #fff;
+  padding: 0;
+  background: #fff;
+  /*color: #fff;*/
+  float: left;
+}
+.no-pad {
+  padding: 0;
+}
+.no-mgn {
+  margin:0;
 }
 .achievement-item:after {
   position: absolute;
@@ -17,13 +22,83 @@
   margin-top: 8px;
 }
 .img-circle.img-responsive {
-  width: 100px;
-  height:100px;
+  width: 120px;
+  height:120px;
+  min-width: 120px;
 }
 
 .card-img {
   margin: 5px auto;
-  border: 1px solid #909090;
+  vertical-align: middle;
+  z-index: 99;
+  /*border: 1px solid #909090;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px;*/
+}
+
+.T {
+  border:1px solid #DE594D;
+  /*border-radius: 20px;*/
+box-shadow: 3px 4px 4px #DE594D;
+  /*background: #85C1E9;*/
+  color:#DE594D;
+}
+
+.NT {
+  /*border:1px solid #479187;*/
+  /*border-radius: 20px;*/
+box-shadow: 3px 4px 4px #479187;
+  color: #479187;
+  /*background:#D1F2EB;*/
+}
+
+
+.T .img-bg{
+  margin: 0;
+  padding: 0;
+  background: #DE594D;
+}
+
+.NT .img-bg{
+  margin: 0;
+  padding: 0;
+  background: #479187;
+}
+.T .img-bg .card-img {
+box-shadow: 2px 2px 13px 3px #b2463c;
+}
+
+.NT .img-bg .card-img {
+box-shadow: 2px 2px 13px 3px #367068;
+}
+
+.col-md-12.bdr h3 {
+  margin-top: 0;
+}
+.T h1, .NT h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-shadow: 1px 2px 2px #808080;
+  font-family: 'Cutive Mono', monospace;
+}
+.T p,.NT p {
+  font-family: open-sans;
+  font-size: 15px;
+  font-style: italic;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.coin {
+  background: url(./badge.svg);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  color: #d4af37;
+  z-index: 99;
+  line-height: 30px;
+  text-align: center;
 }
