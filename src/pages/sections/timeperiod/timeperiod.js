@@ -22,7 +22,6 @@ export default class TimePeriod extends React.Component {
     var data = [];
     dbRef.once('value',function(snapshot){
       snapshot.forEach((childSnapshot)=>{
-        console.log(childSnapshot.val());
         data.push(childSnapshot.val());
       });
       achievementComponent.setState({
@@ -36,17 +35,29 @@ export default class TimePeriod extends React.Component {
       if(this.state.achievements.length>0){
         let achievementItems = this.state.achievements;
         AchievementCards = achievementItems.map((achievement,i)=>
-
-            <Card
-              key={i}
-              category = {achievement.category}
-              pic = {achievement.photo}
-              achiever={achievement.name}
-              desc = {achievement.desc}
-              score = {achievement.score}
-            />
-
-        );
+                            achievement.teamEvent
+                            ?
+                              <Card
+                                key={i}
+                                category = {achievement.category}
+                                pic = {achievement.photo}
+                                achiever={achievement.teamMembers}
+                                size = {achievement.teamSize}
+                                desc = {achievement.desc}
+                                score = {achievement.score}
+                                type = {achievement.teamEvent}
+                              />
+                            :
+                              <Card
+                                key={i}
+                                category = {achievement.category}
+                                pic = {achievement.photo}
+                                achiever={achievement.name}
+                                desc = {achievement.desc}
+                                score = {achievement.score}
+                                type = {achievement.teamEvent}
+                              />
+                            );
       }
     }
     // const AchievementCards = [

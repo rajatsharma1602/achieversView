@@ -21,8 +21,8 @@ class Achievements extends React.Component {
     const todayDate = new Date();
      var thisYear = todayDate.getFullYear();
      var year = thisYear+'_';
-    const dbRef = db.child('achievements').orderByKey().startAt(year);
-    //
+    const dbRef = db.child('achievements');
+    //.orderByKey().startAt(year)
     var timePeriodComponent = this;
     var data = [];
     dbRef.once('value',function(snapshot){
@@ -35,6 +35,7 @@ class Achievements extends React.Component {
                   };
         data.push(timePeriod);
       });
+      data.reverse();
       timePeriodComponent.setState({
         items:data
       });

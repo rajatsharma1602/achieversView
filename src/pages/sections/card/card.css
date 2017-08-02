@@ -2,7 +2,6 @@
   margin: .8em;
   padding: 0;
   background: #fff;
-  /*color: #fff;*/
   float: left;
 }
 .no-pad {
@@ -31,32 +30,25 @@
   margin: 5px auto;
   vertical-align: middle;
   z-index: 99;
-  /*border: 1px solid #909090;
-  border-radius: 50%;
-  padding: 5px;*/
 }
 
 .T {
-  border:1px solid #DE594D;
-  /*border-radius: 20px;*/
-box-shadow: 3px 4px 4px #DE594D;
-  /*background: #85C1E9;*/
-  color:#DE594D;
+  color:#d87f6c;
 }
-
+.T:hover {
+  box-shadow: 3px 4px 4px #DE594D;
+}
 .NT {
-  /*border:1px solid #479187;*/
-  /*border-radius: 20px;*/
-box-shadow: 3px 4px 4px #479187;
   color: #479187;
-  /*background:#D1F2EB;*/
 }
-
+.NT:hover {
+  box-shadow: 3px 4px 4px #479187;
+}
 
 .T .img-bg{
   margin: 0;
   padding: 0;
-  background: #DE594D;
+  background: #d87f6c;
 }
 
 .NT .img-bg{
@@ -65,11 +57,11 @@ box-shadow: 3px 4px 4px #479187;
   background: #479187;
 }
 .T .img-bg .card-img {
-box-shadow: 2px 2px 13px 3px #b2463c;
+/*box-shadow: 2px 2px 13px 3px #bc6a58;*/
 }
 
 .NT .img-bg .card-img {
-box-shadow: 2px 2px 13px 3px #367068;
+/*box-shadow: 2px 2px 13px 3px #367068;*/
 }
 
 .col-md-12.bdr h3 {
@@ -79,7 +71,7 @@ box-shadow: 2px 2px 13px 3px #367068;
   margin-top: 5px;
   margin-bottom: 0;
   text-shadow: 1px 2px 2px #808080;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Julee', cursive;
 }
 .T p,.NT p {
   font-family: open-sans;
