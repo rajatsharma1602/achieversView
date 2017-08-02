@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap';
 import './footer.css';
-import 'font-awesome/css/font-awesome.css';
 
 export default class Footer extends React.Component {
   render() {
