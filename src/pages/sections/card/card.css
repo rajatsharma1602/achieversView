@@ -102,3 +102,8 @@ box-shadow: 2px 2px 13px 3px #367068;
   line-height: 30px;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .achievement-item {
+    min-width: 250px;
+  }
+}
