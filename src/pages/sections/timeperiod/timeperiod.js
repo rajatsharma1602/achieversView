@@ -12,7 +12,7 @@ export default class TimePeriod extends React.Component {
     this.state={
       timeSpan: {
                   year : this.props.year,
-                  month : monthNames[parseInt(this.props.month)]
+                  month : monthNames[parseInt(this.props.month,10)]
                 },
       achievements:[]
     }

@@ -36,13 +36,13 @@
   color:#d87f6c;
 }
 .T:hover {
-  box-shadow: 3px 4px 4px #DE594D;
+  box-shadow: 8px 6px 10px 2px #808080;
 }
 .NT {
   color: #479187;
 }
 .NT:hover {
-  box-shadow: 3px 4px 4px #479187;
+  box-shadow: 8px 6px 10px 2px #808080;
 }
 
 .T .img-bg{

@@ -5,7 +5,7 @@ export default class Card extends React.Component {
   componentWillMount(){
     if(this.props.type){
       this.state={
-        name:this.props.achiever[0].name + " +"+(parseInt(this.props.size)-1).toString(),
+        name:this.props.achiever[0].name + " +"+(parseInt(this.props.size,10)-1).toString(),
         styleClass:" col-md-12 bdr ".concat(this.props.category)
       }
     }

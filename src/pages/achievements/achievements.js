@@ -18,9 +18,9 @@ class Achievements extends React.Component {
 
   componentWillMount(){
     const db = firebase.database().ref();
-    const todayDate = new Date();
-     var thisYear = todayDate.getFullYear();
-     var year = thisYear+'_';
+    // const todayDate = new Date();
+    //  var thisYear = todayDate.getFullYear();
+    //  var year = thisYear+'_';
     const dbRef = db.child('achievements');
     //.orderByKey().startAt(year)
     var timePeriodComponent = this;
