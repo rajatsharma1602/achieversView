@@ -55,6 +55,8 @@ class Achievements extends React.Component {
     }
     return (
       // this is the segment to be loaded
+      <div>
+      <div className="a-bg"></div>
       <div className="achievements-container">
         <Header />
         <div className="container ">
@@ -69,6 +71,7 @@ class Achievements extends React.Component {
         </div>
 
         <Footer />
+      </div>
       </div>
     );
   }
