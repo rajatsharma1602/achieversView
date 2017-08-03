@@ -5,9 +5,10 @@ class Topper extends React.Component {
     return(
       <div className="col-md-12 ldr">
         <div className="ldr-img">
-          <img src={this.props.source} className="img-circle img-responsive" alt={this.props.source} />
+          <img src={this.props.imgSrc} className="img-circle img-responsive" alt={this.props.name} />
         </div>
-        <label >{this.props.name}</label>
+        <label >{this.props.name}</label><br/>
+        <label>{this.props.score}</label>
       </div>
     );
   }
