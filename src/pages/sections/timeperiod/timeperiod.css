@@ -34,3 +34,8 @@
   color: #707070;
   line-height: 19px;
 }
+@media only screen and (max-width: 320px) {
+.date_time {
+	font-size: 29px;
+}
+}

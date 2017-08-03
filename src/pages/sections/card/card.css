@@ -4,6 +4,14 @@
   background: #fff;
   float: left;
 }
+@media only screen and (min-width: 321px) {
+.col-md-12.bdr {
+	height: 260px;
+}
+.detail{
+  max-height: 100px;
+}
+}
 .no-pad {
   padding: 0;
 }
@@ -31,6 +39,7 @@
   vertical-align: middle;
   z-index: 99;
 }
+
 
 .T {
   color:#d87f6c;
@@ -125,4 +134,7 @@
   .achievement-item {
     min-width: 250px;
   }
+}
+.detail h1>span {
+  font-size: 20px;
 }
