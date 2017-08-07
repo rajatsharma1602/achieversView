@@ -14,3 +14,9 @@
   padding: 2px;
   box-shadow: 1px 3px 4px #909090;
 }
+.ldr label {
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+}
