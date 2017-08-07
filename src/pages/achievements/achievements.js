@@ -55,11 +55,13 @@ class Achievements extends React.Component {
     }
     return (
       // this is the segment to be loaded
+      <div>
+      <div className="a-bg"></div>
       <div className="achievements-container">
         <Header />
         <div className="container ">
           <div className="col-md-2 leaders text-center">
-            <h2>Top Achievers</h2>
+            <h2>Top Achievers (2016-2017)</h2>
               <Leaders />
           </div>
           <div className="col-md-10 achievements text-justify">
@@ -69,6 +71,7 @@ class Achievements extends React.Component {
         </div>
 
         <Footer />
+      </div>
       </div>
     );
   }
