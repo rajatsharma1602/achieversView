@@ -83,7 +83,7 @@ export default class User extends React.Component {
         <div className="a-bg"></div>
         <div className="achievements-container">
           <Header />
-          <div className="row no-pad">
+          <div className="no-mgn row no-pad ">
             <div className="col-md-3">
               {userDetail}
             </div>
@@ -101,7 +101,7 @@ export default class User extends React.Component {
           <div className="a-bg"></div>
           <div className="achievements-container">
             <Header />
-            <div className="row no-pad text-justified">
+            <div className="no-mgn row no-pad text-justified">
               <h3 className="text-center">Hey user! Your achievements are nowhere to be found.<br />
               Seems like you still need to bag some achievements.
               </h3>

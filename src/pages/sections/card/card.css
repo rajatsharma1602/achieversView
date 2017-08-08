@@ -16,7 +16,7 @@
   padding: 0;
 }
 .no-mgn {
-  margin:0;
+  margin:0 !important;
 }
 .achievement-item:after {
   position: absolute;
