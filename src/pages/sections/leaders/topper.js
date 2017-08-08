@@ -8,7 +8,7 @@ class Topper extends React.Component {
           <img src={this.props.imgSrc} className="img-circle img-responsive" alt={this.props.name} />
         </div>
         <label >{this.props.name}</label><br/>
-        <label>{this.props.score}</label>
+        <label>{this.props.score} pts</label>
       </div>
     );
   }
