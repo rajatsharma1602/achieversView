@@ -56,22 +56,11 @@ export default class TimePeriod extends React.Component {
                                 desc = {achievement.desc}
                                 score = {achievement.score}
                                 type = {achievement.teamEvent}
+                                rollno = {achievement.rollNo}
                               />
                             );
       }
     }
-    // const AchievementCards = [
-    //   {achiever:"Rajat Sharma",position:"First position",eventName:"WebStorm"},
-    //   {achiever:"Rajat Sharma",position:"Third position",eventName:"Views"}
-    // ].map((achievement,i) =>
-    //               <Card
-    //                 key={i}
-    //                 achiever={achievement.achiever}
-    //                 position = {achievement.position}
-    //                 eventName = {achievement.eventName}
-    //               />
-    //       );
-
     return(
       <div className="timeline-item col-md-12">
         <span className="date_time">{this.state.timeSpan.month} {this.state.timeSpan.year}</span>

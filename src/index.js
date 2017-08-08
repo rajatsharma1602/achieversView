@@ -5,7 +5,7 @@ import Achievements from './pages/achievements/achievements.js';
 import User from './pages/user/user.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as firebase from 'firebase';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 //firebase config
 var config = {
