@@ -13,7 +13,7 @@ export default class Leaders extends React.Component {
 
   componentWillMount(){
     var session="2016-2017"
-    var Ref = firebase.database().ref('leaderboard/'+session).orderByValue().limitToLast(5);
+    var Ref = firebase.database().ref('leaderboard/'+session).orderByValue().limitToLast(10);
     var userDoc = firebase.database();
     var topScores = [];
 

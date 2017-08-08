@@ -1,5 +1,6 @@
 import React from 'react';
 import './card.css';
+import {Link} from 'react-router-dom';
 
 export default class Card extends React.Component {
   componentWillMount(){
@@ -9,24 +10,17 @@ export default class Card extends React.Component {
       let fname = name.substr(0,name.indexOf(" "));
       this.state={
         name: fname +" +"+(parseInt(this.props.size,10)-1).toString(),
+        to:"/user/"+this.props.achiever[0].rollNo,
         styleClass:" col-md-12 bdr ".concat(this.props.category)
       }
     }
     else{
       //is an individual event
-      //limit name to 2 words
       let full = this.props.achiever;
       let fname = full.substr(0,full.indexOf(" "));
-      // var fname;
-      // var index = full.indexOf( ' ', full.indexOf( ' ' ) + 1 );
-      // if(index!=-1){
-      //   fname = full.substr(0,index);
-      // }
-      // else {
-      //   fname = full;
-      // }
       this.state={
         name:fname,
+        to:"/user/"+this.props.rollno,
         styleClass:" col-md-12 bdr ".concat(this.props.category)
       }
     }
@@ -51,11 +45,42 @@ export default class Card extends React.Component {
             <img width="120" height="120" className="img-responsive img-circle card-img" src={this.props.pic} alt={this.props.achiever} />
           </div>
           <div className="col-md-12 col-xs-12 text-center detail">
-            <h1> {this.state.name} <span>{(this.props.type)?"more":""}</span></h1>
+            <h1> <Link to={this.state.to}>{this.state.name}</Link>
+              <span onClick={this.showMembers.bind(this)} >{(this.props.type)?" more":""}</span>
+            </h1>
               <p> {this.state.desc}</p>
           </div>
         </div>
+        <div id="myModal" className="teamModal">
+          <div className="team-modal-content">
+            <div className="team-modal-header">
+              <span onClick={this.hideMembers.bind(this)} className="team-close">&times;</span>
+              <h3>Team Members</h3>
+            </div>
+            <div id="teamDIV" className="team-modal-body">
+
+            </div>
+
+          </div>
+
+        </div>
       </div>
     );
+  }
+  showMembers(){
+    console.log(this.props.achiever);
+    const team = this.props.achiever;
+    var del= "<ul>" ;
+    team.forEach((el)=>{
+      let refTo = "/user/"+el.rollNo;
+      del+= "<li> <a href=\""+refTo+"\">" +el.name+"</a></li>";
+    });
+    del+="</ul>";
+    document.getElementById('teamDIV').innerHTML = del;
+    document.getElementById('myModal').style.display = "block";
+    // <Members team={this.props.achiever} />
+  }
+  hideMembers(){
+    document.getElementById('myModal').style.display = "none";
   }
 }
