@@ -30,7 +30,7 @@ export default class Footer extends React.Component {
           <div className="col-md-4 col-sm-5 text-center">
             <div className="footer-credit">
               <span className="theme_color">TSS</span> © 2016 All Right Reserved<br />
-              Designed by: <a target="_blank" rel="noopener noreferrer" href="http://codewarriors.tssgndu.com"><b>CODE WARRIORS</b></a>
+              Designed by: <a target="_blank" rel="noopener noreferrer" href="http://tssgndu.com/codewarriors"><b>CODE WARRIORS</b></a>
             </div>
           </div>
 
